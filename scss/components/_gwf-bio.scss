@@ -1,0 +1,227 @@
+@use '../config';
+// @use "propvw";
+@forward '../base';
+
+body {
+	background-color: config.$neutral-color-darkest;
+} 
+
+.gwf-bio {
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+	}
+
+	&__holder {
+		width: 800px; 
+		@include config.breakpoint('medium-down') {
+			max-width: 98%;
+		}
+	}
+
+	&__grid {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	&-profile {
+		background-color: config.$custom_2-color-dark;
+		border-radius: 10px;
+		padding: 25px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: config.$neutral-color-lightest;
+
+		&__image {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			object-fit: cover;
+			border: 4px solid config.$neutral-color-light;
+			box-shadow: config.$default-shadow;
+			margin-bottom: 15px;
+    	}
+
+		&__title {
+			font-size: 26px;
+			font-weight: 700;
+			@include config.breakpoint('medium-down') {
+				font-size: 16px;
+			}
+		}
+
+		&__description {
+			font-size: 16px;
+		}
+	}
+
+	&-card {
+		background-color: config.$custom_2-color-dark;
+		border-radius: 10px;
+		padding: 25px 20px;
+
+		&__title {
+			font-size: 24px;
+			font-weight: 700;
+			color: config.$neutral-color-lightest;
+			text-align: center;
+		}
+	}
+
+	&-links {
+		display: flex;
+		flex-direction: column;
+    	align-items: center;
+
+
+		&__item {
+			display: flex;
+			justify-content: center;
+			padding: 12px 15px;
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 16px;
+			color: config.$neutral-color-lightest;
+			width: 60%;
+			background: config.$tertiary-color;
+			margin-bottom: 10px;
+			border-radius: 5px;
+
+			&:hover {
+				background: config.$custom_1-color-dark;
+			}
+
+			@include config.breakpoint('medium-down') {
+				width: 90%;
+			}
+		}
+
+		&__icon {
+			font-size: 18px;
+			margin-right: 10px;
+		}
+	}
+
+	&-social {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+
+		&__link {
+			@include config.reset-link;
+		}
+
+		&__icon {
+			color: config.$neutral-color-lightest;
+			font-size: 24px;
+			opacity: 0.8;
+			transition: 0.3s;
+
+			&:hover {
+				opacity: 1;
+				transform: scale(1.1);
+			}
+		}
+	}
+	
+	&-slider {
+		position: relative;
+		overflow: hidden;
+		border-radius: 12px;
+
+		&__track {
+			display: flex;
+			transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+
+		&__slide {
+			min-width: 100%;
+			background-color: config.$custom_1-color-light;
+			border-radius: 12px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		&__image {
+			width: 100%;
+			height: 250px;
+			object-fit: cover;
+			border-radius: 12px;
+		}
+
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 5px 5px;
+		}
+
+		&__product-name {
+			font-size: 20px;
+			color: config.$neutral-color-darkest;
+			font-weight: 600;
+		}
+
+		&__product-desc {
+			font-size: 16px;
+			color: config.$neutral-color-dark;
+		}
+
+		&__action {
+			text-decoration: none;
+			padding: 8px 16px;
+			font-size: 16px;
+			color: config.$neutral-color-darkest;
+		}
+
+		&__controls {
+			position: absolute;
+			top: 35%;
+			width: 99%;
+			display: flex;
+			justify-content: space-between;
+			padding: 0 5px;
+			pointer-events: none;
+			@include config.breakpoint('medium-down') {
+				width: 97%;
+			}
+		}
+
+		&__btn {
+			@include config.reset-button;
+			background-color: config.$neutral-color-lightest;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			pointer-events: auto;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			
+			&:hover {
+				background-color: config.$neutral-color-light;
+			}
+		}
+	}
+
+	&-map {
+
+		&__frame-container {
+			height: 180px;
+			border-radius: 12px;
+			overflow: hidden;
+			margin: 15px 0;
+    	}
+
+		&__iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+	}
+}
