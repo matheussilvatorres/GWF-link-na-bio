@@ -8,7 +8,7 @@
 
 .gwf-bio {
 	&__wrapper {
-		font-family: "Poppins";
+		font-family: "Nexa";
 		display: flex;
 		justify-content: center;
 		padding: 20px;
@@ -59,12 +59,11 @@
 		&__title {
 			font-size: 28px;
 			font-weight: 700;
+			padding-top: 10px;
 
 			@include config.breakpoint('medium-down') {
 				font-size: 30px;
 			}
-
-			padding-top: 15px;
 		}
 
 		&__description {
@@ -173,7 +172,7 @@
 		}
 
 		&__sub {
-			font-family: "Poppins";
+			font-family: "Nexa";
 			font-size: 12px;
 			font-weight: 400;
 			opacity: 0.8;
@@ -186,7 +185,7 @@
 			transform: translateY(-50%);
 			font-size: 30px;
 			@include config.breakpoint('medium-down') {
-				left: 12px;
+				left: 10px;
 			}
 		}
 	}
@@ -337,7 +336,7 @@
 			text-align: center;
 			font-size: 18px;
 			font-weight: 600;
-			font-family: "Poppins";
+			font-family: "Nexa";
 
 			&:hover {
 				background: config.$custom_1-color-dark;
