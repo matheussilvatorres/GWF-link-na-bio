@@ -475,7 +475,7 @@
 }
 @media (max-width: 767px) {
   .gwf-bio-card__title {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 .gwf-bio-links {
@@ -534,6 +534,11 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 30px;
+}
+@media (max-width: 767px) {
+  .gwf-bio-links__icon {
+    left: 12px;
+  }
 }
 .gwf-bio-creator {
   text-align: center;
@@ -681,7 +686,6 @@
 @media (max-width: 767px) {
   .gwf-bio-loja__button {
     width: 100%;
-    font-size: 16px;
   }
 }
 .gwf-bio-map {
