@@ -1,22 +1,29 @@
 @use '../config';
-// @use "propvw";
 @forward '../base';
 
-body {
-	background-color: config.$neutral-color-darkest;
-} 
+* {
+	padding: 0px;
+	margin: 0px;
+}
 
 .gwf-bio {
 	&__wrapper {
+		font-family: "Poppins";
 		display: flex;
 		justify-content: center;
 		padding: 20px;
+		// background: linear-gradient(180deg,
+		// 		config.$tertiary-color 0%,
+		// 		config.$neutral-color-lightest 65%,
+		// 		config.$primary-color 100%);
+		background-color: config.$secondary-color;
 	}
 
 	&__holder {
-		width: 800px; 
+		width: 800px;
+
 		@include config.breakpoint('medium-down') {
-			max-width: 98%;
+			width: 98%;
 		}
 	}
 
@@ -24,12 +31,17 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 24px;
+		background-color: config.$secondary-color;
+		// background-image:
+		// linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+		// url(https://blacknovember30off.fit4go.com.br/wp-content/uploads/2025/11/BACKGROUND_LINKS_KC_1.png);
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		border-radius: 10px;
+		padding: 25px 20px;
 	}
 
 	&-profile {
-		background-color: config.$custom_2-color-dark;
-		border-radius: 10px;
-		padding: 25px 20px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -42,66 +54,26 @@ body {
 			object-fit: cover;
 			border: 4px solid config.$neutral-color-light;
 			box-shadow: config.$default-shadow;
-			margin-bottom: 15px;
-    	}
+		}
 
 		&__title {
-			font-size: 26px;
+			font-size: 28px;
 			font-weight: 700;
+
 			@include config.breakpoint('medium-down') {
-				font-size: 16px;
+				font-size: 30px;
 			}
+
+			padding-top: 15px;
 		}
 
 		&__description {
 			font-size: 16px;
-		}
-	}
+			padding-bottom: 5px;
 
-	&-card {
-		background-color: config.$custom_2-color-dark;
-		border-radius: 10px;
-		padding: 25px 20px;
-
-		&__title {
-			font-size: 24px;
-			font-weight: 700;
-			color: config.$neutral-color-lightest;
-			text-align: center;
-		}
-	}
-
-	&-links {
-		display: flex;
-		flex-direction: column;
-    	align-items: center;
-
-
-		&__item {
-			display: flex;
-			justify-content: center;
-			padding: 12px 15px;
-			text-decoration: none;
-			font-weight: 600;
-			font-size: 16px;
-			color: config.$neutral-color-lightest;
-			width: 60%;
-			background: config.$tertiary-color;
-			margin-bottom: 10px;
-			border-radius: 5px;
-
-			&:hover {
-				background: config.$custom_1-color-dark;
+			&--destaque {
+				font-weight: bold;
 			}
-
-			@include config.breakpoint('medium-down') {
-				width: 90%;
-			}
-		}
-
-		&__icon {
-			font-size: 18px;
-			margin-right: 10px;
 		}
 	}
 
@@ -109,6 +81,7 @@ body {
 		display: flex;
 		justify-content: center;
 		gap: 20px;
+		padding-top: 20px;
 
 		&__link {
 			@include config.reset-link;
@@ -126,11 +99,137 @@ body {
 			}
 		}
 	}
-	
+
+	&-card {
+
+		&__produtos {
+			@include config.breakpoint('large-up') {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+		&__title {
+			font-size: 24px;
+			font-weight: 700;
+			color: config.$neutral-color-lightest;
+			text-align: center;
+			padding: 20px 0px;
+
+			@include config.breakpoint('medium-down') {
+				font-size: 20px;
+			}
+		}
+	}
+
+	&-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__item--links {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			padding: 12px 15px;
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 16px;
+			color: config.$neutral-color-lightest;
+			width: 60%;
+			background: config.$tertiary-color;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			font-size: 18px;
+			height: 25px;
+
+			&:hover {
+				background: config.$custom_1-color-dark;
+			}
+
+			@include config.breakpoint('medium-down') {
+				width: 90%;
+			}
+
+		}
+
+		&__item--produtos {
+			text-decoration: none;
+		}
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+			line-height: 10px;
+			text-align: center;
+			gap: 10px;
+		}
+
+		&__main {
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		&__sub {
+			font-family: "Poppins";
+			font-size: 12px;
+			font-weight: 400;
+			opacity: 0.8;
+		}
+
+		&__icon {
+			position: absolute;
+			left: 15px; // distancia do canto
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 30px;
+		}
+	}
+
+	&-creator {
+		text-align: center;
+		color: config.$neutral-color-lightest;
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0px 20px;
+		}
+
+		&__image {
+			width: 243px;
+			height: 300px;
+			object-fit: contain;
+			border-radius: 10px;
+			border: 3px solid config.$neutral-color-light;
+			box-shadow: config.$default-shadow;
+			margin-bottom: 15px;
+		}
+
+		&__name {
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+
+		&__bio {
+			font-size: 16px;
+			opacity: 0.9;
+			max-width: 300px;
+		}
+	}
+
 	&-slider {
 		position: relative;
 		overflow: hidden;
 		border-radius: 12px;
+
+		@include config.breakpoint('large-up') {
+			width: 275px;
+		}
 
 		&__track {
 			display: flex;
@@ -139,7 +238,7 @@ body {
 
 		&__slide {
 			min-width: 100%;
-			background-color: config.$custom_1-color-light;
+			background-color: config.$custom_2-color;
 			border-radius: 12px;
 			display: flex;
 			flex-direction: column;
@@ -147,28 +246,37 @@ body {
 		}
 
 		&__image {
-			width: 100%;
-			height: 250px;
+			height: 350px;
 			object-fit: cover;
 			border-radius: 12px;
+
+			@include config.breakpoint('medium-down') {
+				width: 100%;
+				object-fit: cover;
+			}
 		}
 
 		&__info {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
 			padding: 5px 5px;
 		}
 
-		&__product-name {
-			font-size: 20px;
-			color: config.$neutral-color-darkest;
-			font-weight: 600;
+		&__details {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 
-		&__product-desc {
-			font-size: 16px;
-			color: config.$neutral-color-dark;
+		&__product-name {
+			font-size: 18px;
+			color: config.$neutral-color-lightest;
+			font-weight: 600;
+			padding: 5px 0px;
+		}
+
+		&__product-price {
+			font-size: 18px;
+			color: config.$neutral-color-lightest;
+			padding-bottom: 5px;
 		}
 
 		&__action {
@@ -184,10 +292,12 @@ body {
 			width: 99%;
 			display: flex;
 			justify-content: space-between;
-			padding: 0 5px;
+			padding: 0 1.5px;
 			pointer-events: none;
+
 			@include config.breakpoint('medium-down') {
 				width: 97%;
+				padding: 0 4.5px;
 			}
 		}
 
@@ -202,21 +312,55 @@ body {
 			justify-content: center;
 			pointer-events: auto;
 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-			
+
 			&:hover {
 				background-color: config.$neutral-color-light;
 			}
 		}
 	}
 
+	&-loja {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__button {
+			color: config.$neutral-color-lightest;
+			background-color: config.$tertiary-color;
+			border: 2px solid config.$tertiary-color;
+			border-radius: 8px;
+			width: 36%;
+			padding: 15px 20px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 600;
+			font-family: "Poppins";
+
+			&:hover {
+				background: config.$custom_1-color-dark;
+			}
+
+			@include config.breakpoint('medium-down') {
+				width: 100%;
+				font-size: 16px;
+			}
+		}
+	}
+
 	&-map {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		&__frame-container {
 			height: 180px;
 			border-radius: 12px;
 			overflow: hidden;
-			margin: 15px 0;
-    	}
+
+			@include config.breakpoint('medium-down') {
+				width: 100vw;
+			}
+		}
 
 		&__iframe {
 			width: 100%;

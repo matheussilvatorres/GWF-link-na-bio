@@ -66,11 +66,74 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.gwf-icon--uber:before {
+  content: "\e916";
+}
+.gwf-icon--facebook-f:before {
+  content: "\e90c";
+}
+.gwf-icon--instagram:before {
+  content: "\e90d";
+}
+.gwf-icon--linkedin-in:before {
+  content: "\e90e";
+}
+.gwf-icon--pinterest:before {
+  content: "\e90f";
+}
+.gwf-icon--tiktok:before {
+  content: "\e910";
+}
+.gwf-icon--x-twitter:before {
+  content: "\e911";
+}
+.gwf-icon--youtube:before {
+  content: "\e912";
+}
+.gwf-icon--boleto:before {
+  content: "\e900";
+}
+.gwf-icon--cc-amex:before {
+  content: "\e901";
+}
+.gwf-icon--cc-diners-club:before {
+  content: "\e902";
+}
+.gwf-icon--cc-mastercard:before {
+  content: "\e903";
+}
+.gwf-icon--cc-visa:before {
+  content: "\e904";
+}
+.gwf-icon--clearsale:before {
+  content: "\e905";
+}
+.gwf-icon--elo:before {
+  content: "\e906";
+}
+.gwf-icon--google-safe-browsing:before {
+  content: "\e907";
+}
+.gwf-icon--mercadopago:before {
+  content: "\e908";
+}
+.gwf-icon--pagseguro:before {
+  content: "\e909";
+}
+.gwf-icon--pix:before {
+  content: "\e90a";
+}
+.gwf-icon--tray:before {
+  content: "\e90b";
+}
 .gwf-icon--percent:before {
   content: "\e913";
 }
 .gwf-icon--headset_mic:before {
   content: "\e914";
+}
+.gwf-icon--shop:before {
+  content: "\e917";
 }
 .gwf-icon--truck:before {
   content: "\e915";
@@ -110,6 +173,9 @@
 }
 .gwf-icon--headphones:before {
   content: "\f025";
+}
+.gwf-icon--map-marker:before {
+  content: "\f041";
 }
 .gwf-icon--arrow-left:before {
   content: "\f060";
@@ -194,61 +260,4 @@
 }
 .gwf-icon--vine:before {
   content: "\ea97";
-}
-.gwf-icon--facebook-f:before {
-  content: "\e90c";
-}
-.gwf-icon--instagram:before {
-  content: "\e90d";
-}
-.gwf-icon--linkedin-in:before {
-  content: "\e90e";
-}
-.gwf-icon--pinterest:before {
-  content: "\e90f";
-}
-.gwf-icon--tiktok:before {
-  content: "\e910";
-}
-.gwf-icon--x-twitter:before {
-  content: "\e911";
-}
-.gwf-icon--youtube:before {
-  content: "\e912";
-}
-.gwf-icon--boleto:before {
-  content: "\e900";
-}
-.gwf-icon--cc-amex:before {
-  content: "\e901";
-}
-.gwf-icon--cc-diners-club:before {
-  content: "\e902";
-}
-.gwf-icon--cc-mastercard:before {
-  content: "\e903";
-}
-.gwf-icon--cc-visa:before {
-  content: "\e904";
-}
-.gwf-icon--clearsale:before {
-  content: "\e905";
-}
-.gwf-icon--elo:before {
-  content: "\e906";
-}
-.gwf-icon--google-safe-browsing:before {
-  content: "\e907";
-}
-.gwf-icon--mercadopago:before {
-  content: "\e908";
-}
-.gwf-icon--pagseguro:before {
-  content: "\e909";
-}
-.gwf-icon--pix:before {
-  content: "\e90a";
-}
-.gwf-icon--tray:before {
-  content: "\e90b";
 }
