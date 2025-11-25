@@ -398,6 +398,11 @@
   padding: 20px;
   background-color: #3B4C45;
 }
+@media (max-width: 767px) {
+  .gwf-bio__wrapper {
+    padding: 15px;
+  }
+}
 .gwf-bio__holder {
   width: 800px;
 }
@@ -476,7 +481,7 @@
   border-radius: 30px;
   padding: 10px;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 290px;
 }
 @media (min-width: 992px) {
   .gwf-bio-card__produtos {
@@ -487,7 +492,7 @@
 }
 .gwf-bio-card__title {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 400;
   color: #ffffff;
   text-align: center;
   padding: 20px 0px;
@@ -510,7 +515,7 @@
   padding: 12px 15px;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   color: #ffffff;
   width: 60%;
   background: #C96C2D;
@@ -525,6 +530,7 @@
   .gwf-bio-links__item--links {
     width: 90%;
     font-size: 17px;
+    padding-left: 25px;
   }
 }
 .gwf-bio-links__item--produtos {
@@ -539,7 +545,7 @@
 }
 .gwf-bio-links__main {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .gwf-bio-links__sub {
   font-family: "Nexa";
@@ -575,7 +581,7 @@
   padding: 0px 20px;
 }
 .gwf-bio-creator__image {
-  width: 300px;
+  width: 290px;
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
@@ -628,6 +634,7 @@
   color: #ffffff;
   font-weight: 700;
   padding: 5px 0px;
+  text-align: center;
 }
 .gwf-bio-slider__product-price {
   font-size: 18px;
@@ -691,7 +698,7 @@
   width: 100%;
   padding: 15px 20px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Nexa";
 }
 .gwf-bio-loja__button:hover {
@@ -700,6 +707,7 @@
 @media (max-width: 767px) {
   .gwf-bio-loja__button {
     width: 100%;
+    font-size: 16px;
   }
 }
 .gwf-bio-loja__button .gwf-icon {

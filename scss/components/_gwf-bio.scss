@@ -17,6 +17,9 @@
 		// 		config.$neutral-color-lightest 65%,
 		// 		config.$primary-color 100%);
 		background-color: config.$secondary-color;
+		@include config.breakpoint('medium-down'){
+			padding: 15px;
+		}
 	}
 
 	&__holder {
@@ -106,7 +109,7 @@
 			border-radius: 30px;
 			padding: 10px;
 			margin: 0 auto;
-			max-width: 300px;
+			max-width: 290px;
 
 			@include config.breakpoint('large-up') {
 				display: flex;
@@ -117,7 +120,7 @@
 
 		&__title {
 			font-size: 24px;
-			font-weight: 800;
+			font-weight: 400;
 			color: config.$neutral-color-lightest;
 			text-align: center;
 			padding: 20px 0px;
@@ -141,7 +144,7 @@
 			padding: 12px 15px;
 			text-decoration: none;
 			font-size: 18px;
-			font-weight: 600;
+			font-weight: 400;
 			color: config.$neutral-color-lightest;
 			width: 60%;
 			background: config.$tertiary-color;
@@ -156,6 +159,7 @@
 			@include config.breakpoint('medium-down') {
 				width: 90%;
 				font-size: 17px;
+				padding-left: 25px;
 			}
 
 		}
@@ -174,7 +178,7 @@
 
 		&__main {
 			font-size: 16px;
-			font-weight: 600;
+			font-weight: 400;
 		}
 
 		&__sub {
@@ -212,7 +216,7 @@
 		}
 
 		&__image {
-			width: 300px;
+			width: 290px;
 			height: 350px;
 			object-fit: cover;
 			border-radius: 10px;
@@ -282,6 +286,7 @@
 			color: config.$neutral-color-lightest;
 			font-weight: 700;
 			padding: 5px 0px;
+			text-align: center;
 		}
 
 		&__product-price {
@@ -345,7 +350,7 @@
 			width: 100%;
 			padding: 15px 20px;
 			font-size: 18px;
-			font-weight: 600;
+			font-weight: 400;
 			font-family: "Nexa";
 
 			&:hover {
@@ -354,6 +359,7 @@
 
 			@include config.breakpoint('medium-down') {
 				width: 100%;
+				font-size: 16px;
 			}
 
 			.gwf-icon {
