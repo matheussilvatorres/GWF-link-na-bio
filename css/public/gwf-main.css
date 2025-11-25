@@ -611,14 +611,14 @@
   gap: 10px;
 }
 .gwf-bio-slider__image {
-  height: 350px;
-  object-fit: cover;
+  height: 290px;
+  object-fit: contain;
   border-radius: 12px;
 }
 @media (max-width: 767px) {
   .gwf-bio-slider__image {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 .gwf-bio-slider__info {
@@ -650,7 +650,7 @@
 }
 .gwf-bio-slider__controls {
   position: absolute;
-  top: 35%;
+  top: 26%;
   width: 99%;
   display: flex;
   justify-content: space-between;

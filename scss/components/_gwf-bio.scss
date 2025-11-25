@@ -261,13 +261,13 @@
 		}
 
 		&__image {
-			height: 350px;
-			object-fit: cover;
+			height: 290px;
+			object-fit: contain;
 			border-radius: 12px;
 
 			@include config.breakpoint('medium-down') {
 				width: 100%;
-				object-fit: cover;
+				object-fit: contain;
 			}
 		}
 
@@ -305,7 +305,7 @@
 
 		&__controls {
 			position: absolute;
-			top: 35%;
+			top: 26%;
 			width: 99%;
 			display: flex;
 			justify-content: space-between;
