@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 
-    // Botões
     btnNext.addEventListener('click', () => {
         currentIndex = currentIndex < totalSlides - 1 ? currentIndex + 1 : 0;
         updateSliderPosition();
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSliderPosition();
     });
 
-    // ------------ TOUCH / SWIPE ------------
+    // Mobile
     let startX = 0;
     let currentX = 0;
     let isDragging = false;

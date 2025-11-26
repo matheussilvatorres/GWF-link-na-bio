@@ -397,8 +397,8 @@
   justify-content: center;
   padding: 20px;
   background-image: url(https://blacknovember30off.fit4go.com.br/wp-content/uploads/2025/11/BACKGROUND_LINKS_KC_1905_x_2024_px.jpg);
-  background-repeat: repeat;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   .gwf-bio__wrapper {
@@ -413,7 +413,7 @@
 }
 @media (max-width: 767px) {
   .gwf-bio__holder {
-    width: 98%;
+    width: 100vw;
   }
 }
 .gwf-bio__grid {
@@ -567,19 +567,6 @@
   margin-bottom: 15px;
   margin: 10px;
 }
-.gwf-bio__video--container {
-  padding-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.gwf-bio__video--frame {
-  border-radius: 12px;
-  height: 100%;
-  border: none;
-}
 .gwf-bio__produtos {
   background-color: #C8B29E;
   border-radius: 15px;
@@ -696,12 +683,12 @@
 .gwf-bio__carrossel--btn:hover {
   background-color: #DEDEDE;
 }
-.gwf-bio-loja {
+.gwf-bio__loja {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.gwf-bio-loja__button {
+.gwf-bio__loja--button {
   color: #ffffff;
   background-color: #C96C2D;
   border: 2px solid #C96C2D;
@@ -712,22 +699,39 @@
   font-weight: 400;
   font-family: "Nexa";
 }
-.gwf-bio-loja__button:hover {
+.gwf-bio__loja--button:hover {
   background: #e47a34;
 }
 @media (max-width: 767px) {
-  .gwf-bio-loja__button {
+  .gwf-bio__loja--button {
     width: 100%;
     font-size: 16px;
   }
 }
-.gwf-bio-loja__button .gwf-icon {
+.gwf-bio__loja--button .gwf-icon {
   font-size: 20px;
   padding-left: 5px;
 }
 @media (max-width: 767px) {
-  .gwf-bio-loja__button .gwf-icon {
+  .gwf-bio__loja--button .gwf-icon {
     padding-left: 15px;
+  }
+}
+.gwf-bio__video--container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.gwf-bio__video--frame {
+  width: 100%;
+  aspect-ratio: 16/6;
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+}
+@media (max-width: 767px) {
+  .gwf-bio__video--frame {
+    aspect-ratio: 16/9;
   }
 }
 .gwf-bio__map {

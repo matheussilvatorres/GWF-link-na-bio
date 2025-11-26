@@ -16,8 +16,8 @@
 		// background desktop
 		background-image:
 			url(https://blacknovember30off.fit4go.com.br/wp-content/uploads/2025/11/BACKGROUND_LINKS_KC_1905_x_2024_px.jpg);
-		background-repeat: repeat;
-		background-size: contain;
+		background-repeat: no-repeat;
+		background-size: cover;
 
 		@include config.breakpoint('medium-down') {
 			padding: 15px;
@@ -32,7 +32,7 @@
 		width: 800px;
 
 		@include config.breakpoint('medium-down') {
-			width: 98%;
+			width: 100vw;
 		}
 	}
 
@@ -200,23 +200,6 @@
 		}
 	}
 
-	&__video {
-		&--container {
-			padding-bottom: 15px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			border-radius: 12px;
-			overflow: hidden;
-		}
-
-		&--frame {
-			border-radius: 12px;
-			height: 100%;
-			border: none;
-		}
-	}
-
 	&__produtos {
 		background-color: config.$custom_2-color;
 		border-radius: 15px;
@@ -335,12 +318,12 @@
 		}
 	}
 
-	&-loja {
+	&__loja {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		&__button {
+		&--button {
 			color: config.$neutral-color-lightest;
 			background-color: config.$tertiary-color;
 			border: 2px solid config.$tertiary-color;
@@ -368,6 +351,26 @@
 					padding-left: 15px;
 				}
 
+			}
+		}
+	}
+
+	&__video {
+		&--container {
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		&--frame {
+			width: 100%;
+			aspect-ratio: 16 / 6; //mantém proporção correta do YouT
+			border-radius: 16px; // cantos arredondados iguais ao site
+			overflow: hidden;
+			border: none;
+
+			@include config.breakpoint('medium-down') {
+				aspect-ratio: 16 / 9;	
 			}
 		}
 	}
