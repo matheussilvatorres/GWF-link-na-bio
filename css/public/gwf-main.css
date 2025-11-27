@@ -717,6 +717,10 @@
     padding-left: 15px;
   }
 }
+.gwf-bio__loja--link {
+  text-decoration: none;
+  color: #ffffff;
+}
 .gwf-bio__video--container {
   width: 100%;
   max-width: 600px;
