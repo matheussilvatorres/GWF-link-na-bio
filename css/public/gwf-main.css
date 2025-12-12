@@ -721,6 +721,65 @@
   text-decoration: none;
   color: #ffffff;
 }
+.gwf-bio__site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.gwf-bio__site--title {
+  color: #ffffff;
+  font-size: 24px;
+}
+@media (max-width: 767px) {
+  .gwf-bio__site--title {
+    text-shadow: 2px 2px 4px black;
+  }
+}
+.gwf-bio__site--botao {
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+  background-color: #95765d;
+  padding: 15px;
+  width: 40%;
+  border-radius: 5px;
+}
+.gwf-bio__site--botao:hover {
+  opacity: 1;
+  background-color: rgb(133.2995867769, 105.5661157025, 83.2004132231);
+}
+@media (max-width: 767px) {
+  .gwf-bio__site--botao {
+    width: 90%;
+  }
+}
+.gwf-bio__site--link {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+  text-shadow: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+.gwf-bio__site--link:hover {
+  text-decoration: none;
+}
+.gwf-bio__site .gwf-icon {
+  font-size: 20px;
+  padding-left: 5px;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .gwf-bio__site .gwf-icon {
+    padding-left: 15px;
+  }
+}
 .gwf-bio__video--container {
   width: 100%;
   max-width: 600px;
