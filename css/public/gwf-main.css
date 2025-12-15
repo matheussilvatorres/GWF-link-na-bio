@@ -399,13 +399,14 @@
   background-image: url(https://blacknovember30off.fit4go.com.br/wp-content/uploads/2025/11/BACKGROUND_LINKS_KC_1905_x_2024_px.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 @media (max-width: 767px) {
   .gwf-bio__wrapper {
     padding: 15px;
     background-image: url(https://blacknovember30off.fit4go.com.br/wp-content/uploads/2025/11/BACKGROUND_LINKS_KC_5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
   }
 }
 .gwf-bio__holder {
